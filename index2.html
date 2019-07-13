@@ -199,28 +199,98 @@
         </div>
     </div>
     <div class="second-page4 bg-white w-100 h-50">
-        <div class="site">
-            <div class="slider" style="background-image:url('https://images.unsplash.com/photo-1470020337050-543c4e581988?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=')">
-                <div class="slick-slide">Phosfluorescently evolve impactful partnerships through alternative process improvements. Interactively morph cutting-edge niche markets for premium portals. Quickly fabricate best-of-breed paradigms for low-risk high-yield data. Appropriately disintermediate.Phosfluorescently evolve impactful partnerships through alternative process improvements. Interactively morph cutting-edge niche markets for premium portals. Quickly fabricate best-of-breed paradigms for low-risk high-yield data. Appropriately disintermediate.
-                </div>
-                <div class="slick-slide">Interactively communicate 2.0 markets for revolutionary supply chains. Collaboratively simplify user-centric data through innovative web-readiness. Compellingly engage plug-and-play strategic theme areas before cross functional niches. Uniquely myocardinate worldwide total linkage and backward-compatible synergy.</div>
-                <div class="slick-slide">Slide Three</div>
+        <h1 class="end-carousel-text">Use Bootstrap's carousel to show multiple items per slide.</h1>
+        <!--Carousel Wrapper-->
+        <div id="carousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
+            <!--Controls-->
+            <div class="controls-top">
+                <a class="btn-floating btn-secondary" href="#carousel-with-lb" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                <a class="btn-floating btn-secondary" href="#carousel-with-lb" data-slide="next"><i class="fas fa-chevron-right"></i></a>
             </div>
+            <!--/.Controls-->
+            <!--Indicators-->
+            <ol class="carousel-indicators ">
+                <li data-target="#carousel-with-lb" data-slide-to="0" class="active  bg-black"></li>
+                <li data-target="#carousel-with-lb" data-slide-to="1" class=" bg-black"></li>
+                <li data-target="#carousel-with-lb" data-slide-to="2" class=" bg-black"></li>
+            </ol>
+            <!--/.Indicators-->
+            <!--Slides and lightbox-->
+            <div class="carousel-inner mdb-lightbox" role="listbox">
+                <!--First slide-->
+                <div class=" carousel-item active text-center">
+                    <figure class="col-md-3 d-md-inline-block">
+                        <img src="images/01.jpg">
+                    </figure>
+                    <figure class="col-md-3 d-md-inline-block">
+                        <img src="images/03.jpg">
+                    </figure>
+                    <figure class="col-md-3 d-md-inline-block">
+                        <img src="images/02.jpg">
+                    </figure>
+                </div>
+                <!--/.First slide-->
+                <!--Second slide-->
+                <div class="carousel-item text-center">
+                    <figure class="col-md-3 d-md-inline-block">
+                        <img src="images/03.jpg">
+                    </figure>
+                    <figure class="col-md-3 d-md-inline-block">
+                        <img src="images/02.jpg">
+                    </figure>
+                    <figure class="col-md-3 d-md-inline-block">
+                        <img src="images/01.jpg">
+                    </figure>
+                </div>
+                <!--/.Second slide-->
+                <!--Third slide-->
+                <div class="carousel-item text-center">
+                    <figure class="col-md-3 d-md-inline-block">
+                        <img src="images/02.jpg">
+                    </figure>
+                    <figure class="col-md-3 d-md-inline-block">
+                        <img src="images/01.jpg">
+                    </figure>
+                    <figure class="col-md-3 d-md-inline-block">
+                        <img src="images/03.jpg">
+                    </figure>
+                </div>
+                <!--/.Third slide-->
+            </div>
+            <!--/.Slides-->
         </div>
+        <!--/.Carousel Wrapper-->
     </div>
-    <!-- jQuery CDN -->
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <!-- slick Carousel CDN -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
-    <script src="https://kit.fontawesome.com/b5cc4ad5fd.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b5cc4ad5fd.js"></script>
     <script src="js/anime.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="js/my.js"></script>
+    <script type="text/javascript">
+    // Instantiate the Bootstrap carousel
+    $('.multi-item-carousel').carousel({
+        interval: false
+    });
+
+    // for every slide in carousel, copy the next slide's item in the slide.
+    // Do the same for the next, next item.
+    $('.multi-item-carousel .item').each(function() {
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+
+        if (next.next().length > 0) {
+            next.next().children(':first-child').clone().appendTo($(this));
+        } else {
+            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+        }
+    });
+    </script>
 </body>
 
 </html>

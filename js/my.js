@@ -130,23 +130,21 @@ $(document).ready(function() {
 // });
 
 
+$(document).ready(function() {
+    AOS.init({
+        easing: 'ease-in-out-sine'
+    });
 
-$(".contain-newpage").hover(function() {
-    anime({
-        targets: ".contain-newpage-itm2-img1",
-        translateX: [790, 0],
-        easing: 'easeInOutSine',
-        duration: 2000
-    });
-    $(".contain-newpage-itm2").addClass("d-flex");
-    $(".contain-newpage-itm").css("margin-right", "700px");
-    $(".contain-newpage-itm2").removeClass("d-xl-none");
-}, function() {
-    anime({
-        targets: ".contain-newpage-itm2",
-        translateX: [0, 790],
-        easing: 'easeInOutSine',
-        duration: 2000
-    });
-    $(".contain-newpage-itm").css("margin-right", "0px");
+    setInterval(addItem, 1000);
+
+
+    var container = document.getElementById('aos-demo');
+
+    function addItem() {
+
+        var item = document.createElement('div');
+        item.classList.add('aos-item');
+        item.setAttribute('data-aos', 'fade-down');
+
+    }
 });

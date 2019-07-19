@@ -238,7 +238,7 @@
             </div>
         </div>
     </div>
-    <div class="second-page3 d-flex flex-column   justify-content-center align-items-center w-100 h-100">
+    <!--     <div class="second-page3 d-flex flex-column   justify-content-center align-items-center w-100 h-100">
         <div class="row   ">
             <div class="col-6 offset-3 ">
                 <h1 class="second-page3-text">What We Do</h1>
@@ -252,103 +252,38 @@
                 <button class="second-page3-btn ">Our Services</button>
             </div>
         </div>
-    </div>
-    <div class="second-page4 bg-white w-100 h-50">
-        <h1 class="end-carousel-text">Use Bootstrap's carousel to show multiple items per slide.</h1>
-        <div id="carousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
-            <div class="controls-top">
-                <a class="btn-floating btn-secondary" href="#carousel-with-lb" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-                <a class="btn-floating btn-secondary" href="#carousel-with-lb" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+    </div> -->
+    <div class="second-page4 bg-white w-100 ">
+        <section class="center slider">
+            <div>
+                <img src="images/10.jpg">
             </div>
-            <ol class="carousel-indicators ">
-                <li data-target="#carousel-with-lb" data-slide-to="0" class="active  bg-black"></li>
-                <li data-target="#carousel-with-lb" data-slide-to="1" class=" bg-black"></li>
-                <li data-target="#carousel-with-lb" data-slide-to="2" class=" bg-black"></li>
-            </ol>
-            <div class="carousel-inner mdb-lightbox" role="listbox">
-                <div class=" carousel-item active text-center">
-                    <figure class="col-md-2 d-md-inline-block">
-                        <img src="images/01.jpg">
-                    </figure>
-                    <figure class="col-md-2 d-md-inline-block">
-                        <img src="images/03.jpg">
-                    </figure>
-                    <figure class="col-md-2 d-md-inline-block">
-                        <img src="images/01.jpg">
-                    </figure>
-                    <figure class="col-md-2 d-md-inline-block">
-                        <img src="images/03.jpg">
-                    </figure>
-                    <figure class="col-md-2 d-md-inline-block">
-                        <img src="images/02.jpg">
-                    </figure>
-                </div>
-                <div class="carousel-item text-center">
-                    <figure class="col-md-2 d-md-inline-block">
-                        <img src="images/03.jpg">
-                    </figure>
-                    <figure class="col-md-2 d-md-inline-block">
-                        <img src="images/02.jpg">
-                    </figure>
-                    <figure class="col-md-2 d-md-inline-block">
-                        <img src="images/03.jpg">
-                    </figure>
-                    <figure class="col-md-2 d-md-inline-block">
-                        <img src="images/02.jpg">
-                    </figure>
-                    <figure class="col-md-2 d-md-inline-block">
-                        <img src="images/01.jpg">
-                    </figure>
-                </div>
-                <div class="carousel-item text-center">
-                    <figure class="col-md-2 d-md-inline-block">
-                        <img src="images/02.jpg">
-                    </figure>
-                    <figure class="col-md-2 d-md-inline-block">
-                        <img src="images/01.jpg">
-                    </figure>
-                    <figure class="col-md-2 d-md-inline-block">
-                        <img src="images/02.jpg">
-                    </figure>
-                    <figure class="col-md-2 d-md-inline-block">
-                        <img src="images/01.jpg">
-                    </figure> photo
-                    <figure class="col-md-2 d-md-inline-block">
-                        <img src="images/03.jpg">
-                    </figure>
-                </div>
+            <div>
+                <img src="images/02.jpg">
             </div>
-        </div>
+            <div>
+                <img src="images/04.jpg">
+            </div>
+            <div>
+                <img src="images/12.jpg">
+            </div>
+            <div>
+                <img src="images/08.jpg">
+            </div>
+            <div>
+                <img src="images/09.jpg">
+            </div>
+        </section>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="slick/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b5cc4ad5fd.js"></script>
     <script src="js/anime.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="js/my.js"></script>
-    <script type="text/javascript">
-    // Instantiate the Bootstrap carousel
-    $('.multi-item-carousel').carousel({
-        interval: false
-    });
-
-    // for every slide in carousel, copy the next slide's item in the slide.
-    // Do the same for the next, next item.
-    $('.multi-item-carousel .item').each(function() {
-        var next = $(this).next();
-        if (!next.length) {
-            next = $(this).siblings(':first');
-        }
-        next.children(':first-child').clone().appendTo($(this));
-
-        if (next.next().length > 0) {
-            next.next().children(':first-child').clone().appendTo($(this));
-        } else {
-            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-        }
-    });
-    </script>
 </body>
 
 </html>

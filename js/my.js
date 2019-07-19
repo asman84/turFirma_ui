@@ -23,139 +23,123 @@ $(document).ready(function() {
         translateX: chiqishQanot,
         translateY: chiqishQanot,
         easing: 'easeInOutSine'
+
+
     });
 
-    // $('body').scroll(function() {
-    //     $(".sticky-head").addClass('none');
-    //     $(".sticky-head2").css("margin-top", "0");
-
-    // });
-
-    $(document).ready(function() {
-        $('body').bind('mousewheel', function(e) {
-            if (e.originalEvent.wheelDelta / 120 > 0) {
-                console.log('scrolling up !');
-                $(".sticky-head").addClass("block");
-                $(".sticky-head2").css("margin-top", "117px");
-            }
-
-
-            //  else if {
-            //     $(".sticky-head").removeClass("block");
-            //     $(".sticky-head2").removeCss("margin-top", "117px");
-            // }
-            else {
-                console.log('scrolling down !');
-                $(".sticky-head").addClass('none');
-                $(".sticky-head2").css("margin-top", "0");
-                $(".sticky-head").addClass('none');
-            }
-        });
+    $('body').bind('mousewheel', function(e) {
+        if (e.originalEvent.wheelDelta / 120 > 0) {
+            console.log('scrolling up !');
+            $(".sticky-head").addClass("block");
+            $(".sticky-head2").css("margin-top", "117px");
+        } else {
+            console.log('scrolling down !');
+            $(".sticky-head").addClass('none');
+            $(".sticky-head2").css("margin-top", "0");
+            $(".sticky-head").addClass('none');
+        }
     });
-
 });
+
+
 
 
 // index4 js
 
-$(document).ready(function() {
-
-    // var turRegionBlockWidth = $(".contain-newpage").width();
-    // var turRegionBlockPhoto = turRegionBlockWidth / 3;
 
 
-    $(".contain-newpage-itm2-img1").hover(function() {
-        $(".contain-newpage-itm2-img1").addClass("img1");
-        $(".contain-newpage-itm2-img2").removeClass("img2");
-        $(".contain-newpage-itm2-img3").removeClass("img3");
-    }, function() {
-        $(".contain-newpage-itm2-img1").removeClass("img1");
 
-    });
-    $(".contain-newpage-itm2-img2").hover(function() {
-        $(".contain-newpage-itm2-img2").addClass("img2");
-        $(".contain-newpage-itm2-img1").removeClass("img1");
-        $(".contain-newpage-itm2-img3").removeClass("img3");
-    }, function() {
-        $(".contain-newpage-itm2-img2").removeClass("img2");
-
-    });
-    $(".contain-newpage-itm2-img3").hover(function() {
-        $(".contain-newpage-itm2-img3").addClass("img3");
-        $(".contain-newpage-itm2-img2").removeClass("img2");
-        $(".contain-newpage-itm2-img1").removeClass("img1");
-    }, function() {
-        $(".contain-newpage-itm2-img3").removeClass("img3");
-
-    });
-
-    $(".contain-newpage-itm2-img4").hover(function() {
-        $(".contain-newpage-itm2-img5").removeClass("img5");
-        $(".contain-newpage-itm2-img6").removeClass("img6");
-        $(".contain-newpage-itm2-img4").addClass("img4");
-    }, function() {
-        $(".contain-newpage-itm2-img4").removeClass("img4");
-    });
-    $(".contain-newpage-itm2-img5").hover(function() {
-        $(".contain-newpage-itm2-img4").removeClass("img4");
-        $(".contain-newpage-itm2-img6").removeClass("img6");
-        $(".contain-newpage-itm2-img5").addClass("img5");
-    }, function() {
-        $(".contain-newpage-itm2-img5").removeClass("img5");
-    });
-    $(".contain-newpage-itm2-img6").hover(function() {
-        $(".contain-newpage-itm2-img5").removeClass("img5");
-        $(".contain-newpage-itm2-img4").removeClass("img4");
-        $(".contain-newpage-itm2-img6").addClass("img6");
-    }, function() {
-        $(".contain-newpage-itm2-img6").removeClass("img6");
-    });
-
-    $(".contain-newpage-itm2-img7").hover(function() {
-        $(".contain-newpage-itm2-img8").removeClass("img8");
-        $(".contain-newpage-itm2-img9").removeClass("img9");
-        $(".contain-newpage-itm2-img7").addClass("img7");
-    }, function() {
-        $(".contain-newpage-itm2-img7").removeClass("img7");
-    });
-    $(".contain-newpage-itm2-img8").hover(function() {
-        $(".contain-newpage-itm2-img7").removeClass("img7");
-        $(".contain-newpage-itm2-img9").removeClass("img9");
-        $(".contain-newpage-itm2-img8").addClass("img8");
-    }, function() {
-        $(".contain-newpage-itm2-img8").removeClass("img8");
-    });
-    $(".contain-newpage-itm2-img9").hover(function() {
-        $(".contain-newpage-itm2-img8").removeClass("img8");
-        $(".contain-newpage-itm2-img7").removeClass("img7");
-        $(".contain-newpage-itm2-img9").addClass("img9");
-    }, function() {
-        $(".contain-newpage-itm2-img9").removeClass("img9");
-    });
-
-    $(".contain-newpage-itm2-img10").hover(function() {
-        $(".contain-newpage-itm2-img11").removeClass("img11");
-        $(".contain-newpage-itm2-img12").removeClass("img12");
-        $(".contain-newpage-itm2-img10").addClass("img10");
-    }, function() {
-        $(".contain-newpage-itm2-img10").removeClass("img10");
-    });
-    $(".contain-newpage-itm2-img11").hover(function() {
-        $(".contain-newpage-itm2-img10").removeClass("img10");
-        $(".contain-newpage-itm2-img12").removeClass("img12");
-        $(".contain-newpage-itm2-img11").addClass("img11");
-    }, function() {
-        $(".contain-newpage-itm2-img11").removeClass("img11");
-    });
-    $(".contain-newpage-itm2-img12").hover(function() {
-        $(".contain-newpage-itm2-img11").removeClass("img11");
-        $(".contain-newpage-itm2-img10").removeClass("img10");
-        $(".contain-newpage-itm2-img12").addClass("img12");
-    }, function() {
-        $(".contain-newpage-itm2-img12").removeClass("img12");
-    });
+$(".contain-newpage-itm2-img1").hover(function() {
+    $(".contain-newpage-itm2-img1").addClass("img1");
+    $(".contain-newpage-itm2-img2").removeClass("img2");
+    $(".contain-newpage-itm2-img3").removeClass("img3");
+}, function() {
+    $(".contain-newpage-itm2-img1").removeClass("img1");
 
 });
+$(".contain-newpage-itm2-img2").hover(function() {
+    $(".contain-newpage-itm2-img2").addClass("img2");
+    $(".contain-newpage-itm2-img1").removeClass("img1");
+    $(".contain-newpage-itm2-img3").removeClass("img3");
+}, function() {
+    $(".contain-newpage-itm2-img2").removeClass("img2");
+
+});
+$(".contain-newpage-itm2-img3").hover(function() {
+    $(".contain-newpage-itm2-img3").addClass("img3");
+    $(".contain-newpage-itm2-img2").removeClass("img2");
+    $(".contain-newpage-itm2-img1").removeClass("img1");
+}, function() {
+    $(".contain-newpage-itm2-img3").removeClass("img3");
+
+});
+
+$(".contain-newpage-itm2-img4").hover(function() {
+    $(".contain-newpage-itm2-img5").removeClass("img5");
+    $(".contain-newpage-itm2-img6").removeClass("img6");
+    $(".contain-newpage-itm2-img4").addClass("img4");
+}, function() {
+    $(".contain-newpage-itm2-img4").removeClass("img4");
+});
+$(".contain-newpage-itm2-img5").hover(function() {
+    $(".contain-newpage-itm2-img4").removeClass("img4");
+    $(".contain-newpage-itm2-img6").removeClass("img6");
+    $(".contain-newpage-itm2-img5").addClass("img5");
+}, function() {
+    $(".contain-newpage-itm2-img5").removeClass("img5");
+});
+$(".contain-newpage-itm2-img6").hover(function() {
+    $(".contain-newpage-itm2-img5").removeClass("img5");
+    $(".contain-newpage-itm2-img4").removeClass("img4");
+    $(".contain-newpage-itm2-img6").addClass("img6");
+}, function() {
+    $(".contain-newpage-itm2-img6").removeClass("img6");
+});
+
+$(".contain-newpage-itm2-img7").hover(function() {
+    $(".contain-newpage-itm2-img8").removeClass("img8");
+    $(".contain-newpage-itm2-img9").removeClass("img9");
+    $(".contain-newpage-itm2-img7").addClass("img7");
+}, function() {
+    $(".contain-newpage-itm2-img7").removeClass("img7");
+});
+$(".contain-newpage-itm2-img8").hover(function() {
+    $(".contain-newpage-itm2-img7").removeClass("img7");
+    $(".contain-newpage-itm2-img9").removeClass("img9");
+    $(".contain-newpage-itm2-img8").addClass("img8");
+}, function() {
+    $(".contain-newpage-itm2-img8").removeClass("img8");
+});
+$(".contain-newpage-itm2-img9").hover(function() {
+    $(".contain-newpage-itm2-img8").removeClass("img8");
+    $(".contain-newpage-itm2-img7").removeClass("img7");
+    $(".contain-newpage-itm2-img9").addClass("img9");
+}, function() {
+    $(".contain-newpage-itm2-img9").removeClass("img9");
+});
+
+$(".contain-newpage-itm2-img10").hover(function() {
+    $(".contain-newpage-itm2-img11").removeClass("img11");
+    $(".contain-newpage-itm2-img12").removeClass("img12");
+    $(".contain-newpage-itm2-img10").addClass("img10");
+}, function() {
+    $(".contain-newpage-itm2-img10").removeClass("img10");
+});
+$(".contain-newpage-itm2-img11").hover(function() {
+    $(".contain-newpage-itm2-img10").removeClass("img10");
+    $(".contain-newpage-itm2-img12").removeClass("img12");
+    $(".contain-newpage-itm2-img11").addClass("img11");
+}, function() {
+    $(".contain-newpage-itm2-img11").removeClass("img11");
+});
+$(".contain-newpage-itm2-img12").hover(function() {
+    $(".contain-newpage-itm2-img11").removeClass("img11");
+    $(".contain-newpage-itm2-img10").removeClass("img10");
+    $(".contain-newpage-itm2-img12").addClass("img12");
+}, function() {
+    $(".contain-newpage-itm2-img12").removeClass("img12");
+});
+
 
 
 $(".contain-newpage").hover(function() {
@@ -413,384 +397,415 @@ $(".contain-newpage4").hover(function() {
 
 
 
-$(document).ready(function() {
 
-    function contactRight() {
-        anime({
-            targets: ['#zero'],
-            translateX: 100 + "%"
-        });
-    }
-
-    function contactLeft() {
-        anime({
-            targets: ['#zero'],
-            translateX: -100 + "%"
-        });
-    }
-
-    function masterView() {
-        contactRight();
-        contactLeft();
-    }
-    $(".contain-newpage-itm2-img1").on("click", contactRight);
-
-
-    $(".contain-newpage-itm2-img1").on("click", function() {
-        $("#zero").toggleClass('.hero');
-
-        $(".contain-newpage-itm2-img1").on("click", contactLeft);
+function contactRight() {
+    anime({
+        targets: ['#zero'],
+        translateX: 100 + "%"
     });
+}
 
-    $(".contain-newpage-itm2-img1").on("click", function() {
-        $("#zero").addClass("hero");
+function contactLeft() {
+    anime({
+        targets: ['#zero'],
+        translateX: -100 + "%"
     });
-    // FINAL PAGE
-    function contactToRight() {
-        anime({
-            targets: ['.contain-newpage-itm2-img3'],
-            translateX: 80 + '%',
-            easing: 'easeInOutQuad'
+}
 
-        });
-    }
+function masterView() {
+    contactRight();
+    contactLeft();
+}
+$(".contain-newpage-itm2-img1").on("click", contactRight);
 
-    function contactToLeft() {
-        anime({
 
-            targets: ['.contain-newpage-itm2-img3'],
-            translateX: 0 + '%',
-            easing: 'easeInOutQuad'
+$(".contain-newpage-itm2-img1").on("click", function() {
+    $("#zero").toggleClass('.hero');
 
-        });
-    }
-
-    function aboutToRight() {
-        anime({
-
-            targets: ['.contain-newpage-itm2-img2'],
-            translateX: 80 + '%',
-            easing: 'easeInOutQuad'
-
-        });
-    }
-
-    function aboutToLeft() {
-        anime({
-
-            targets: ['.contain-newpage-itm2-img2'],
-            translateX: 0 + '%',
-            easing: 'easeInOutQuad'
-
-        });
-    }
-
-    function viewTeam() {
-        aboutToRight();
-        contactToRight();
-
-    }
-
-    function viewAbout() {
-        aboutToLeft();
-        contactToRight();
-    }
-
-    function viewContact() {
-        aboutToLeft();
-        contactToLeft();
-    }
-
-    $(".contain-newpage-itm2-img1").click(viewTeam);
-    $(".contain-newpage-itm2-img2").click(viewAbout);
-    $(".contain-newpage-itm2-img3").click(viewContact);
-
+    $(".contain-newpage-itm2-img1").on("click", contactLeft);
 });
 
+$(".contain-newpage-itm2-img1").on("click", function() {
+    $("#zero").addClass("hero");
+});
+// FINAL PAGE
+function contactToRight() {
+    anime({
+        targets: ['.contain-newpage-itm2-img3'],
+        translateX: 80 + '%',
+        easing: 'easeInOutQuad'
 
-$(document).ready(function() {
-
-    function contactRight() {
-        anime({
-            targets: ['#zero'],
-            translateX: 100 + "%"
-        });
-    }
-
-    function contactLeft() {
-        anime({
-            targets: ['#zero'],
-            translateX: -100 + "%"
-        });
-    }
-
-    function masterView() {
-        contactRight();
-        contactLeft();
-    }
-
-    $(".contain-newpage-itm2-img4").on("click", contactRight);
-
-
-    $(".contain-newpage-itm2-img4").on("click", function() {
-        $("#zero").toggleClass('.hero');
-
-        $(".contain-newpage-itm2-img4").on("click", contactLeft);
     });
+}
 
-    $(".contain-newpage-itm2-img4").on("click", function() {
-        $("#zero").addClass("hero");
+function contactToLeft() {
+    anime({
+
+        targets: ['.contain-newpage-itm2-img3'],
+        translateX: 0 + '%',
+        easing: 'easeInOutQuad'
+
     });
-    // FINAL PAGE
-    function contactToRight() {
-        anime({
-            targets: ['.contain-newpage-itm2-img6'],
-            translateX: 80 + '%',
-            easing: 'easeInOutQuad'
+}
 
-        });
-    }
+function aboutToRight() {
+    anime({
 
-    function contactToLeft() {
-        anime({
+        targets: ['.contain-newpage-itm2-img2'],
+        translateX: 80 + '%',
+        easing: 'easeInOutQuad'
 
-            targets: ['.contain-newpage-itm2-img6'],
-            translateX: 0 + '%',
-            easing: 'easeInOutQuad'
+    });
+}
 
-        });
-    }
+function aboutToLeft() {
+    anime({
 
-    function aboutToRight() {
-        anime({
+        targets: ['.contain-newpage-itm2-img2'],
+        translateX: 0 + '%',
+        easing: 'easeInOutQuad'
 
-            targets: ['.contain-newpage-itm2-img5'],
-            translateX: 80 + '%',
-            easing: 'easeInOutQuad'
+    });
+}
 
-        });
-    }
+function viewTeam() {
+    aboutToRight();
+    contactToRight();
 
-    function aboutToLeft() {
-        anime({
+}
 
-            targets: ['.contain-newpage-itm2-img5'],
-            translateX: 0 + '%',
-            easing: 'easeInOutQuad'
+function viewAbout() {
+    aboutToLeft();
+    contactToRight();
+}
 
-        });
-    }
+function viewContact() {
+    aboutToLeft();
+    contactToLeft();
+}
 
-    function viewTeam() {
-        aboutToRight();
-        contactToRight();
+$(".contain-newpage-itm2-img1").click(viewTeam);
+$(".contain-newpage-itm2-img2").click(viewAbout);
+$(".contain-newpage-itm2-img3").click(viewContact);
 
-    }
 
-    function viewAbout() {
-        aboutToLeft();
-        contactToRight();
-    }
 
-    function viewContact() {
-        aboutToLeft();
-        contactToLeft();
-    }
 
-    $(".contain-newpage-itm2-img4").click(viewTeam);
-    $(".contain-newpage-itm2-img5").click(viewAbout);
-    $(".contain-newpage-itm2-img6").click(viewContact);
+
+
+function contactRight() {
+    anime({
+        targets: ['#zero'],
+        translateX: 100 + "%"
+    });
+}
+
+function contactLeft() {
+    anime({
+        targets: ['#zero'],
+        translateX: -100 + "%"
+    });
+}
+
+function masterView() {
+    contactRight();
+    contactLeft();
+}
+
+$(".contain-newpage-itm2-img4").on("click", contactRight);
+
+
+$(".contain-newpage-itm2-img4").on("click", function() {
+    $("#zero").toggleClass('.hero');
+
+    $(".contain-newpage-itm2-img4").on("click", contactLeft);
 });
 
+$(".contain-newpage-itm2-img4").on("click", function() {
+    $("#zero").addClass("hero");
+});
+// FINAL PAGE
+function contactToRight() {
+    anime({
+        targets: ['.contain-newpage-itm2-img6'],
+        translateX: 80 + '%',
+        easing: 'easeInOutQuad'
 
-
-
-$(document).ready(function() {
-
-    function contactRight() {
-        anime({
-            targets: ['#zero'],
-            translateX: 100 + "%"
-        });
-    }
-
-    function contactLeft() {
-        anime({
-            targets: ['#zero'],
-            translateX: -100 + "%"
-        });
-    }
-
-    function masterView() {
-        contactRight();
-        contactLeft();
-    }
-
-    $(".contain-newpage-itm2-img7").on("click", contactRight);
-
-
-    $(".contain-newpage-itm2-img7").on("click", function() {
-        $("#zero").toggleClass('.hero');
-
-        $(".contain-newpage-itm2-img7").on("click", contactLeft);
     });
+}
 
-    $(".contain-newpage-itm2-img7").on("click", function() {
-        $("#zero").addClass("hero");
+function contactToLeft() {
+    anime({
+
+        targets: ['.contain-newpage-itm2-img6'],
+        translateX: 0 + '%',
+        easing: 'easeInOutQuad'
+
     });
-    // FINAL PAGE
-    function contactToRight() {
-        anime({
-            targets: ['.contain-newpage-itm2-img9'],
-            translateX: 80 + '%',
-            easing: 'easeInOutQuad'
+}
 
-        });
-    }
+function aboutToRight() {
+    anime({
 
-    function contactToLeft() {
-        anime({
+        targets: ['.contain-newpage-itm2-img5'],
+        translateX: 80 + '%',
+        easing: 'easeInOutQuad'
 
-            targets: ['.contain-newpage-itm2-img9'],
-            translateX: 0 + '%',
-            easing: 'easeInOutQuad'
+    });
+}
 
-        });
-    }
+function aboutToLeft() {
+    anime({
 
-    function aboutToRight() {
-        anime({
+        targets: ['.contain-newpage-itm2-img5'],
+        translateX: 0 + '%',
+        easing: 'easeInOutQuad'
 
-            targets: ['.contain-newpage-itm2-img8'],
-            translateX: 80 + '%',
-            easing: 'easeInOutQuad'
+    });
+}
 
-        });
-    }
+function viewTeam() {
+    aboutToRight();
+    contactToRight();
 
-    function aboutToLeft() {
-        anime({
+}
 
-            targets: ['.contain-newpage-itm2-img8'],
-            translateX: 0 + '%',
-            easing: 'easeInOutQuad'
+function viewAbout() {
+    aboutToLeft();
+    contactToRight();
+}
 
-        });
-    }
+function viewContact() {
+    aboutToLeft();
+    contactToLeft();
+}
 
-    function viewTeam() {
-        aboutToRight();
-        contactToRight();
+$(".contain-newpage-itm2-img4").click(viewTeam);
+$(".contain-newpage-itm2-img5").click(viewAbout);
+$(".contain-newpage-itm2-img6").click(viewContact);
 
-    }
 
-    function viewAbout() {
-        aboutToLeft();
-        contactToRight();
-    }
 
-    function viewContact() {
-        aboutToLeft();
-        contactToLeft();
-    }
+function contactRight() {
+    anime({
+        targets: ['#zero'],
+        translateX: 100 + "%"
+    });
+}
 
-    $(".contain-newpage-itm2-img7").click(viewTeam);
-    $(".contain-newpage-itm2-img8").click(viewAbout);
-    $(".contain-newpage-itm2-img9").click(viewContact);
+function contactLeft() {
+    anime({
+        targets: ['#zero'],
+        translateX: -100 + "%"
+    });
+}
+
+function masterView() {
+    contactRight();
+    contactLeft();
+}
+
+$(".contain-newpage-itm2-img7").on("click", contactRight);
+
+
+$(".contain-newpage-itm2-img7").on("click", function() {
+    $("#zero").toggleClass('.hero');
+
+    $(".contain-newpage-itm2-img7").on("click", contactLeft);
 });
 
+$(".contain-newpage-itm2-img7").on("click", function() {
+    $("#zero").addClass("hero");
+});
+// FINAL PAGE
+function contactToRight() {
+    anime({
+        targets: ['.contain-newpage-itm2-img9'],
+        translateX: 80 + '%',
+        easing: 'easeInOutQuad'
 
-
-$(document).ready(function() {
-
-    function contactRight() {
-        anime({
-            targets: ['#zero'],
-            translateX: 100 + "%"
-        });
-    }
-
-    function contactLeft() {
-        anime({
-            targets: ['#zero'],
-            translateX: -100 + "%"
-        });
-    }
-
-    function masterView() {
-        contactRight();
-        contactLeft();
-    }
-
-    $(".contain-newpage-itm2-img10").on("click", contactRight);
-
-
-    $(".contain-newpage-itm2-img10").on("click", function() {
-        $("#zero").toggleClass('.hero');
-
-        $(".contain-newpage-itm2-img10").on("click", contactLeft);
     });
+}
 
-    $(".contain-newpage-itm2-img10").on("click", function() {
-        $("#zero").addClass("hero");
+function contactToLeft() {
+    anime({
+
+        targets: ['.contain-newpage-itm2-img9'],
+        translateX: 0 + '%',
+        easing: 'easeInOutQuad'
+
     });
-    // FINAL PAGE
-    function contactToRight() {
-        anime({
-            targets: ['.contain-newpage-itm2-img12'],
-            translateX: 80 + '%',
-            easing: 'easeInOutQuad'
+}
 
+function aboutToRight() {
+    anime({
+
+        targets: ['.contain-newpage-itm2-img8'],
+        translateX: 80 + '%',
+        easing: 'easeInOutQuad'
+
+    });
+}
+
+function aboutToLeft() {
+    anime({
+
+        targets: ['.contain-newpage-itm2-img8'],
+        translateX: 0 + '%',
+        easing: 'easeInOutQuad'
+
+    });
+}
+
+function viewTeam() {
+    aboutToRight();
+    contactToRight();
+
+}
+
+function viewAbout() {
+    aboutToLeft();
+    contactToRight();
+}
+
+function viewContact() {
+    aboutToLeft();
+    contactToLeft();
+}
+
+$(".contain-newpage-itm2-img7").click(viewTeam);
+$(".contain-newpage-itm2-img8").click(viewAbout);
+
+
+
+function contactRight() {
+    anime({
+        targets: ['#zero'],
+        translateX: 100 + "%"
+    });
+}
+
+function contactLeft() {
+    anime({
+        targets: ['#zero'],
+        translateX: -100 + "%"
+    });
+}
+
+function masterView() {
+    contactRight();
+    contactLeft();
+}
+
+$(".contain-newpage-itm2-img10").on("click", contactRight);
+
+
+$(".contain-newpage-itm2-img10").on("click", function() {
+    $("#zero").toggleClass('.hero');
+
+    $(".contain-newpage-itm2-img10").on("click", contactLeft);
+});
+
+$(".contain-newpage-itm2-img10").on("click", function() {
+    $("#zero").addClass("hero");
+});
+// FINAL PAGE
+function contactToRight() {
+    anime({
+        targets: ['.contain-newpage-itm2-img12'],
+        translateX: 80 + '%',
+        easing: 'easeInOutQuad'
+
+    });
+}
+
+function contactToLeft() {
+    anime({
+
+        targets: ['.contain-newpage-itm2-img12'],
+        translateX: 0 + '%',
+        easing: 'easeInOutQuad'
+
+    });
+}
+
+function aboutToRight() {
+    anime({
+
+        targets: ['.contain-newpage-itm2-img11'],
+        translateX: 80 + '%',
+        easing: 'easeInOutQuad'
+
+    });
+}
+
+function aboutToLeft() {
+    anime({
+
+        targets: ['.contain-newpage-itm2-img11'],
+        translateX: 0 + '%',
+        easing: 'easeInOutQuad'
+
+    });
+}
+
+function viewTeam() {
+    aboutToRight();
+    contactToRight();
+
+}
+
+function viewAbout() {
+    aboutToLeft();
+    contactToRight();
+}
+
+function viewContact() {
+    aboutToLeft();
+    contactToLeft();
+}
+
+$(".contain-newpage-itm2-img10").click(viewTeam);
+$(".contain-newpage-itm2-img11").click(viewAbout);
+$(".contain-newpage-itm2-img12").click(viewContact);
+
+(function($) {
+    $.fn.scrollReveal = function() {
+        //get viewport size
+        var windowHeight = $(window).height(),
+            windowWidth = $(window).width(),
+            initialScroll = $(window).scrollTop(),
+            items = $(".js-reveal"),
+            scroll;
+
+        //hide anything not in the viewport
+        items.each(function() {
+            if ($(this).offset().top >= windowHeight) {
+                $(this).addClass("js-reveal--hidden");
+            }
         });
-    }
 
-    function contactToLeft() {
-        anime({
-
-            targets: ['.contain-newpage-itm2-img12'],
-            translateX: 0 + '%',
-            easing: 'easeInOutQuad'
-
+        //on scroll
+        $(window).scroll(function(event) {
+            //get the current scroll position
+            scroll = $(window).scrollTop();
+            //show anything that is now in view (scroll + windowHeight)
+            items.each(function() {
+                if ($(this).offset().top <= scroll + windowHeight) {
+                    $(this).removeClass("js-reveal--hidden");
+                }
+            });
         });
-    }
 
-    function aboutToRight() {
-        anime({
+        return this;
+    };
+})(jQuery);
 
-            targets: ['.contain-newpage-itm2-img11'],
-            translateX: 80 + '%',
-            easing: 'easeInOutQuad'
-
-        });
-    }
-
-    function aboutToLeft() {
-        anime({
-
-            targets: ['.contain-newpage-itm2-img11'],
-            translateX: 0 + '%',
-            easing: 'easeInOutQuad'
-
-        });
-    }
-
-    function viewTeam() {
-        aboutToRight();
-        contactToRight();
-
-    }
-
-    function viewAbout() {
-        aboutToLeft();
-        contactToRight();
-    }
-
-    function viewContact() {
-        aboutToLeft();
-        contactToLeft();
-    }
-
-    $(".contain-newpage-itm2-img10").click(viewTeam);
-    $(".contain-newpage-itm2-img11").click(viewAbout);
-    $(".contain-newpage-itm2-img12").click(viewContact);
+$(".center").slick({
+    infinite: true,
+    centerMode: true,
+    slidesToShow: 5,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 1000
 });

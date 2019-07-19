@@ -800,6 +800,122 @@ $(".contain-newpage-itm2-img12").click(viewContact);
         return this;
     };
 })(jQuery);
+// left
+$(".kres").hover(function() {
+    anime({
+        targets: ".first-kres",
+        translateX: [-790, 0],
+        rotateZ: 45,
+
+        easing: 'easeInOutQuad',
+        duration: 500
+    });
+    $(".first-kres").addClass("d-block");
+}, function() {
+    $(".first-kres").removeClass("d-block");
+});
+
+
+$(".kres").hover(function() {
+    anime({
+        targets: ".second-kres",
+        translateX: [-790, 0],
+        easing: 'easeInOutQuad',
+        rotateZ: 135,
+        duration: 600
+    });
+    $(".second-kres").addClass("d-block");
+}, function() {
+    $(".second-kres").removeClass("d-block");
+});
+
+
+
+$(".kres2").hover(function() {
+    anime({
+        targets: ".first-kres2",
+        translateX: [790, 0],
+        rotateZ: 45,
+
+        easing: 'easeInOutQuad',
+        duration: 500
+    });
+    $(".first-kres2").addClass("d-block");
+}, function() {
+    $(".first-kres2").removeClass("d-block");
+});
+
+
+$(".kres2").hover(function() {
+    anime({
+        targets: ".second-kres2",
+        translateX: [790, 0],
+        easing: 'easeInOutQuad',
+        rotateZ: 135,
+        duration: 600
+    });
+    $(".second-kres2").addClass("d-block");
+}, function() {
+    $(".second-kres2").removeClass("d-block");
+});
+
+
+$(".kres3").hover(function() {
+    anime({
+        targets: ".first-kres3",
+        translateX: [-790, 0],
+        rotateZ: 45,
+
+        easing: 'easeInOutQuad',
+        duration: 500
+    });
+    $(".first-kres3").addClass("d-block");
+}, function() {
+    $(".first-kres3").removeClass("d-block");
+});
+
+
+$(".kres3").hover(function() {
+    anime({
+        targets: ".second-kres3",
+        translateX: [-790, 0],
+        easing: 'easeInOutQuad',
+        rotateZ: 135,
+        duration: 600
+    });
+    $(".second-kres3").addClass("d-block");
+}, function() {
+    $(".second-kres3").removeClass("d-block");
+});
+
+
+$(".kres4").hover(function() {
+    anime({
+        targets: ".first-kres4",
+        translateX: [790, 0],
+        rotateZ: 45,
+
+        easing: 'easeInOutQuad',
+        duration: 500
+    });
+    $(".first-kres4").addClass("d-block");
+}, function() {
+    $(".first-kres4").removeClass("d-block");
+});
+
+
+$(".kres4").hover(function() {
+    anime({
+        targets: ".second-kres4",
+        translateX: [790, 0],
+        easing: 'easeInOutQuad',
+        rotateZ: 135,
+        duration: 600
+    });
+    $(".second-kres4").addClass("d-block");
+}, function() {
+    $(".second-kres4").removeClass("d-block");
+});
 
 $(".center").slick({
     infinite: true,
@@ -808,4 +924,19 @@ $(".center").slick({
     slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 1000
+});
+
+
+// $(".lazy").slick({
+//     vertical: true,
+//     centerMode: true,
+//     autoplay: true,
+//     autoplaySpeed: 1000
+// });
+
+$(".lazy").slick({
+    lazyLoad: 'ondemand', // ondemand progressive anticipated
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000
 });

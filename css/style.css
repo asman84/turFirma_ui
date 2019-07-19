@@ -1,6 +1,6 @@
 body,
 html {
-    /*height: 100%;*/
+    height: auto;
     width: 100%;
     overflow-x: hidden;
 
@@ -156,20 +156,6 @@ figure.effect-zoe:hover .parda img {
 
 }
 
-
-
-
-
-
-.hotel-pic {
-    background-image: url(../images/viproom.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-
-
 .hotel-qanot {
     z-index: -1;
     left: 0;
@@ -197,7 +183,7 @@ figure.effect-zoe:hover .parda img {
 
 .hotel-text {
     width: auto;
-    height: auto;
+    height: 100%;
     position: absolute;
     margin-top: 50px;
     margin-left: 50px;
@@ -233,7 +219,7 @@ figure.effect-zoe:hover .parda img {
 
 .text4 {
     position: absolute;
-    bottom: 10px;
+    top: 80%;
     left: 22%;
     font-size: 1.3rem;
 }
@@ -247,14 +233,187 @@ figure.effect-zoe:hover .parda img {
     left: 120%;
 }
 
-.btn {
+.kres {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 300px;
 
 }
 
-/*Drop down css style*/
+.kres2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 300px;
+
+}
+
+.kres3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+
+}
+
+.kres4 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+
+}
+
+.own-kres {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: red;
+}
+
+.first-kres {
+    position: absolute;
+    background-color: blue;
+    left: 20px;
+    top: 20px;
+    width: 50px;
+    height: 2px;
+    transform: rotateZ(45deg);
+    display: none;
+}
+
+.second-kres {
+    position: absolute;
+    background-color: blue;
+    left: 20px;
+    top: 20px;
+    width: 50px;
+    height: 2px;
+    transform: rotateZ(135deg);
+    display: none;
+}
+
+.own-kres2 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: red;
+}
+
+.first-kres2 {
+    position: absolute;
+    background-color: blue;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 2px;
+    transform: rotateZ(45deg);
+    display: none;
+}
+
+.second-kres2 {
+    position: absolute;
+    background-color: blue;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 2px;
+    transform: rotateZ(135deg);
+    display: none;
+}
+
+
+.own-kres3 {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    background-color: red;
+}
+
+.first-kres3 {
+    position: absolute;
+    background-color: blue;
+    left: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 2px;
+    transform: rotateZ(45deg);
+    display: none;
+}
+
+.second-kres3 {
+    position: absolute;
+    background-color: blue;
+    left: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 2px;
+    transform: rotateZ(135deg);
+    display: none;
+}
+
+
+.own-kres4 {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: red;
+}
+
+.first-kres4 {
+    position: absolute;
+    background-color: blue;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 2px;
+    transform: rotateZ(45deg);
+    display: none;
+}
+
+.second-kres4 {
+    position: absolute;
+    background-color: blue;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 2px;
+    transform: rotateZ(135deg);
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .menu {
     background: rgba(0, 0, 0, 0.5);
@@ -1133,26 +1292,26 @@ figure.effect-duke:hover p {
 
 /*footer Carousel*/
 
+
 .slider {
+
     width: 100%;
-    height: 100%;
-    margin: 100px auto;
+    height: 600px !important;
+    margin: 40px auto;
 }
 
 .slick-slide {
     margin: 0px 20px;
+    height: 100%;
+    transition: all ease-in-out .3s;
+    opacity: .2;
+
 }
 
 .slick-slide img {
+
     width: 100%;
     height: 100%;
-}
-
-
-
-.slick-slide {
-    transition: all ease-in-out .3s;
-    opacity: .2;
 }
 
 .slick-active {
@@ -1166,6 +1325,12 @@ figure.effect-duke:hover p {
 .slick-track {
     background-color: none;
 }
+
+.slick-prev:before,
+.slick-next:before {
+    display: none !important;
+}
+
 
 
 /*index6 style visa card*/

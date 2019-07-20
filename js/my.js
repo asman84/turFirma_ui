@@ -926,15 +926,9 @@ $(".center").slick({
     autoplaySpeed: 1000
 });
 
-
 $(".vertical-center").slick({
     vertical: true,
+    infinite: true,
     autoplay: true,
     autoplaySpeed: 1000
 });
-// $(".lazy").slick({
-//     lazyLoad: 'ondemand', // ondemand progressive anticipated
-//     infinite: true,
-//     autoplay: true,
-//     autoplaySpeed: 4000
-// });

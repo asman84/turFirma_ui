@@ -927,16 +927,14 @@ $(".center").slick({
 });
 
 
-// $(".lazy").slick({
-//     vertical: true,
-//     centerMode: true,
-//     autoplay: true,
-//     autoplaySpeed: 1000
-// });
-
-$(".lazy").slick({
-    lazyLoad: 'ondemand', // ondemand progressive anticipated
-    infinite: true,
+$(".vertical-center").slick({
+    vertical: true,
     autoplay: true,
-    autoplaySpeed: 4000
+    autoplaySpeed: 1000
 });
+// $(".lazy").slick({
+//     lazyLoad: 'ondemand', // ondemand progressive anticipated
+//     infinite: true,
+//     autoplay: true,
+//     autoplaySpeed: 4000
+// });

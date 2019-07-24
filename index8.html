@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="slick/slick/slick.css">
@@ -69,9 +70,12 @@
     </header>
     <div class="con-first vw-100 vh-100" style="background-image: url(images/dubay.jpg);">
         <div class="con-first-inner h-100 w-100">
-            <div class="row w-100 h-100">
+            <div class="row vw-100 vh-100">
                 <div class="con-first-inner-map offset-3 col-6  h-50 p-0 fadeDown-animate">
-                    <img src="images/mapjpg.jpg" class="w-100 h-100">
+                    <div id="map">
+                        <div title="" style="width: 60px; height: 77px; overflow: hidden; position: absolute; opacity: 0; cursor: pointer; touch-action: none; left: -17px; top: -38px; z-index: 39;"><img alt="" src="https://birdtravelpr.com/wp-content/themes/bird-pr/assets/img/google-map-marker.png" draggable="false" style="position: absolute;left: 0px;top: 0px;user-select: none;width: 60px;height: 77px;border: 0px;padding: 0px;margin: 0px;max-width: none;opacity: 1;">
+                        </div>
+                    </div>
                 </div>
                 <div class="col-6 w-100 offset-3 d-flex justify-content-center align-items-center">
                     <div class="row con-second-inner w-100 h-100">
@@ -90,11 +94,11 @@
                             <div class="con-second-inner-text2">
                                 <h1 class="text-inner-text ">Direction</h1>
                                 <p class="text-inner-text2">By tube</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                <p class="text-inner-text3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
                                 <p class="text-inner-text2">By Bus</p>
-                                <p>LadBroke Grove is also served by 7,23,52,70,228 and 452 bus routes</p>
+                                <p class="text-inner-text3">LadBroke Grove is also served by 7,23,52,70,228 and 452 bus routes</p>
                             </div>
                         </div>
                     </div>
@@ -110,6 +114,8 @@
     <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/b5cc4ad5fd.js"></script>
     <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=myMap" async defer></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE7kfwSaqVFjr57AHNk2N9057p-d8PNUU&callback=myMap" async defer></script>
     <script type="text/javascript" src="js/my.js"></script>
 </body>
 

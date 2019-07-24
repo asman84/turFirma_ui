@@ -4,7 +4,7 @@
         var hotelQanotHeight = windowHeight * 0.4;
         var chiqishQanot = hotelQanotHeight * 0.22;
 
-        console.log("windowheight:", windowHeight);
+
         $(".test-hotel").height(windowHeight - 2 * hotelMargin);
         $('.test-hotel').css('margin-top', hotelMargin);
         $('.test-hotel').css('margin-bottom', hotelMargin);
@@ -836,7 +836,7 @@
                 rotateZ: 45,
 
                 easing: 'easeInOutQuad',
-                duration: 500
+                duration: 200
             });
             $(".first-kres").addClass("d-block");
         }, function() {
@@ -850,7 +850,7 @@
                 translateX: [-790, 0],
                 easing: 'easeInOutQuad',
                 rotateZ: 135,
-                duration: 600
+                duration: 200
             });
             $(".second-kres").addClass("d-block");
         }, function() {
@@ -866,7 +866,7 @@
                 rotateZ: 45,
 
                 easing: 'easeInOutQuad',
-                duration: 500
+                duration: 200
             });
             $(".first-kres2").addClass("d-block");
         }, function() {
@@ -880,7 +880,7 @@
                 translateX: [790, 0],
                 easing: 'easeInOutQuad',
                 rotateZ: 135,
-                duration: 600
+                duration: 200
             });
             $(".second-kres2").addClass("d-block");
         }, function() {
@@ -895,7 +895,7 @@
                 rotateZ: 45,
 
                 easing: 'easeInOutQuad',
-                duration: 500
+                duration: 200
             });
             $(".first-kres3").addClass("d-block");
         }, function() {
@@ -909,7 +909,7 @@
                 translateX: [-790, 0],
                 easing: 'easeInOutQuad',
                 rotateZ: 135,
-                duration: 600
+                duration: 200
             });
             $(".second-kres3").addClass("d-block");
         }, function() {
@@ -924,7 +924,7 @@
                 rotateZ: 45,
 
                 easing: 'easeInOutQuad',
-                duration: 500
+                duration: 200
             });
             $(".first-kres4").addClass("d-block");
         }, function() {
@@ -938,7 +938,7 @@
                 translateX: [790, 0],
                 easing: 'easeInOutQuad',
                 rotateZ: 135,
-                duration: 600
+                duration: 150
             });
             $(".second-kres4").addClass("d-block");
         }, function() {
@@ -1004,3 +1004,18 @@
         mobile: true,
         reset: false
     });
+
+
+    function myMap() {
+        var latLng = new google.maps.LatLng(41.2984, 69.2731);
+        var mapProp = {
+            zoom: 18,
+            draggable: false,
+            center: latLng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        // Following Command Will Create the New Map Object
+        var map = new google.maps.Map(document.getElementById("map"), mapProp);
+        google.maps.event.addDomListener(window, "load", myMap);
+    }

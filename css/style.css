@@ -806,9 +806,6 @@ a {
 }
 
 .contain-newpage {
-    top: 150px;
-    left: 11%;
-    position: absolute;
     height: 350px;
     width: 80%;
     box-shadow: -6px 4px 20px 1px #2A2A2A;
@@ -1614,6 +1611,10 @@ figure.effect-duke:hover p {
 
 /*index 8 Contact*/
 
+#map {
+    height: 100%;
+    width: 100%;
+}
 
 .con-first {
 
@@ -1653,6 +1654,12 @@ figure.effect-duke:hover p {
 
 }
 
+.text-inner-text3 {
+    font-family: Courier New;
+    margin-left: 0px;
+
+}
+
 .con-second-inner-text1 {
     width: 100%;
     height: 50%;
@@ -1661,6 +1668,13 @@ figure.effect-duke:hover p {
 .con-second-inner-text2 {
     width: 100%;
     height: 50%;
+}
+
+
+.map-metka {
+    position: absolute !important;
+    margin-top: -300px;
+    margin-left: 45%;
 }
 
 

@@ -1010,7 +1010,7 @@
         var latLng = new google.maps.LatLng(41.2984, 69.2731);
         var mapProp = {
             zoom: 18,
-            draggable: false,
+            draggable: true,
             center: latLng,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };

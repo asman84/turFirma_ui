@@ -162,14 +162,16 @@ figure.effect-zoe:hover .parda img {
     z-index: -1;
     left: 0;
     top: 0;
-    background-color: #8A716A;
+    /*background-color: #8A716A;*/
+    background-image: linear-gradient(to top left, blue, pink);
 }
 
 .hotel-qanot2 {
     z-index: -1;
     right: 0;
     bottom: 0;
-    background-color: #F4B907;
+    /*background-color: #F4B907;*/
+    background-image: linear-gradient(to bottom right, blue, pink);
 }
 
 
@@ -182,25 +184,17 @@ figure.effect-zoe:hover .parda img {
     position: absolute;
 }
 
-
-.hotel-text {
-    width: auto;
-    height: 100%;
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-
 .text-span {
-    position: absolute;
-    top: 10px;
-    margin-left: -50px;
     width: 40px;
     height: 2px;
     background-color: red;
 }
 
-
+.text-span2 {
+    width: 40px;
+    height: 2px;
+    background-color: blue;
+}
 
 .text2 {
     font-weight: bold;
@@ -208,31 +202,6 @@ figure.effect-zoe:hover .parda img {
     line-height: 1;
     margin-bottom: 1rem;
     margin-top: -5px;
-
-
-}
-
-.text3 {
-    font-family: @MingLiU_HKSCS-ExtB;
-    font-size: 1.4rem;
-    margin-left: 50px;
-    margin-top: 10%;
-}
-
-.text4 {
-    position: absolute;
-    top: 80%;
-    left: 22%;
-    font-size: 1.3rem;
-}
-
-.spann {
-    position: absolute;
-    width: 50px;
-    height: 2px;
-    top: 50%;
-    background-color: blue;
-    left: 120%;
 }
 
 .kres {
@@ -390,10 +359,6 @@ figure.effect-zoe:hover .parda img {
     transform: rotateZ(135deg);
     display: none;
 }
-
-
-
-
 
 .menu {
     background: rgba(0, 0, 0, 0.5);
@@ -1682,10 +1647,16 @@ figure.effect-duke:hover p {
 
 .news-header {
     width: 100%;
-    height: 50%;
+    height: 400px;
+
+}
+
+.news-header2 {
+    /*margin-top: -25%;*/
 }
 
 .news-header-inner {
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

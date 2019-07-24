@@ -128,9 +128,9 @@ figure.effect-zoe:hover .parda img {
 }
 
 .text-img {
-    width: 600px;
-    height: 100px;
-    transform: rotateX(180deg);
+    width: 800px;
+    height: 200px;
+    /*transform: rotateX(180deg);*/
 }
 
 .slick {
@@ -280,22 +280,22 @@ figure.effect-zoe:hover .parda img {
 
 .first-kres {
     position: absolute;
-    background: linear-gradient(to top left, #FFDD00, #0DFF00);
+    background-color: darkblue;
     left: 20px;
     top: 20px;
     width: 50px;
-    height: 5px;
+    height: 2px;
     transform: rotateZ(45deg);
     display: none;
 }
 
 .second-kres {
     position: absolute;
-    background: linear-gradient(to top left, #FFDD00, #0DFF00);
+    background-color: darkblue;
     left: 20px;
     top: 20px;
     width: 50px;
-    height: 5px;
+    height: 2px;
     transform: rotateZ(135deg);
     display: none;
 }
@@ -311,7 +311,7 @@ figure.effect-zoe:hover .parda img {
 
 .first-kres2 {
     position: absolute;
-    background: linear-gradient(to top left, #FFDD00, #0DFF00);
+    background-color: darkblue;
     right: 20px;
     top: 20px;
     width: 50px;
@@ -322,7 +322,7 @@ figure.effect-zoe:hover .parda img {
 
 .second-kres2 {
     position: absolute;
-    background: linear-gradient(to top left, #FFDD00, #0DFF00);
+    background-color: darkblue;
     right: 20px;
     top: 20px;
     width: 50px;
@@ -341,7 +341,6 @@ figure.effect-zoe:hover .parda img {
 
 .first-kres3 {
     position: absolute;
-    /*background: linear-gradient(#e66465, #9198e5);*/
     background-color: darkblue;
     left: 20px;
     bottom: 20px;
@@ -353,7 +352,6 @@ figure.effect-zoe:hover .parda img {
 
 .second-kres3 {
     position: absolute;
-    /*background: linear-gradient(#e66465, #9198e5);*/
     background-color: darkblue;
     left: 20px;
     bottom: 20px;
@@ -373,7 +371,7 @@ figure.effect-zoe:hover .parda img {
 
 .first-kres4 {
     position: absolute;
-    background: linear-gradient(#e66465, #9198e5);
+    background-color: darkblue;
     right: 20px;
     bottom: 20px;
     width: 50px;
@@ -384,7 +382,7 @@ figure.effect-zoe:hover .parda img {
 
 .second-kres4 {
     position: absolute;
-    background: linear-gradient(#e66465, #9198e5);
+    background-color: darkblue;
     right: 20px;
     bottom: 20px;
     width: 50px;
@@ -770,7 +768,9 @@ a {
 }
 
 .slick-track {
-    background-color: #f9eeee !important;
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+    /*display: none;*/
+    /*visibility: hidden;*/
 }
 
 .second-page-itm-text {
@@ -852,12 +852,20 @@ a {
 .contain-newpage-text {
     font-family: Constantia;
     font-weight: bold;
+
 }
 
 .contain-newpage-text2 {
-    font-family: Constantia;
-    font-size: 1.2rem;
+    font-family: Segoe Print;
+    font-size: 1.3rem;
 }
+
+.contain-newpage-head h1 {
+    font-family: Constantia;
+    font-weight: bold;
+    font-size: 70px;
+}
+
 
 
 .contain-newpage-itm2-img1 img {
@@ -1252,9 +1260,7 @@ figure.effect-duke h2 {
 }
 
 figure.effect-duke p {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
     margin: 20px;
     padding: 30px;
     border: 2px solid #fff;
@@ -1294,15 +1300,24 @@ figure.effect-duke:hover p {
 
 /*Vertical carousel */
 
+.vertical-center {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: white !important;
+}
 
 .slider {
     width: 100%;
-    margin: 10px auto;
+    overflow: hidden;
+
 }
 
 .slick-slide img {
     width: 100%;
     height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .slick-prev:before,
@@ -1318,23 +1333,50 @@ figure.effect-duke:hover p {
 }
 
 .slick-active {
-    opacity: .5;
+    opacity: 1;
+    transition: all 1s;
+    transform: scale(1.2);
+
 
 }
 
 .slick-current {
     opacity: 1;
+    height: 100%;
 }
 
 .min {
-    min-height: 62vh;
+    padding: 0 !important;
+    margin: 0 !important;
+    min-height: 63vh;
+    overflow: hidden;
     position: relative;
 }
 
 /*index6 style visa card*/
+
 .visacard-header-img img {
     width: 100%;
     height: 400px;
+}
+
+.azimbaraka-visa {
+    position: absolute;
+    right: 0;
+    top: 335px;
+    color: white;
+    text-align: center;
+    width: 40%;
+    height: 16%;
+    background-color: rgba(0, 0, 0, 0.5);
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 50px;
+}
+
+.azimbaraka-visa-text {
+    font-family: Constantia;
+    font-weight: bold;
 }
 
 .flag-img {
@@ -1371,4 +1413,331 @@ figure.effect-duke:hover p {
 
 .visacard-itms .row div.col-3 {
     padding-left: 50px !important;
+}
+
+.head-text-new {
+    margin-left: 200px;
+
+}
+
+
+
+/*index7 transports*/
+
+.trans-first-page {
+    width: 100%;
+    height: 100%;
+    background: fixed;
+    background-size: cover;
+    z-index: 100;
+}
+
+.trans-first-page-inner-text {
+    width: 30%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.trans-first-page-inner-text h3 {
+    color: white;
+    text-align: center;
+}
+
+.trans-first-page-inner-img {
+    width: 50%;
+    height: 70%;
+
+}
+
+.trans-first-page-inner-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.trans-second-page {
+    background: fixed;
+}
+
+.trans-second-page-inner {
+    width: 100%;
+    height: 500px !important;
+}
+
+.trans-second-page-text {
+    color: white;
+    font-family: Constantia;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+
+.trans-second-page-text2 {
+    color: lightblue;
+    font-family: Constantia;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.trans-second-page-text3 {
+    color: white;
+    font-family: Courier New;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+.trans-number {
+    font-size: 8rem;
+    color: #17A2B8;
+}
+
+.trans-second-page-text4 {
+    font-family: Constantia;
+    font-weight: bold;
+    margin-left: 70px;
+    margin-top: -120px;
+}
+
+.trans-second-page-text5 {
+    font-family: Constantia;
+    font-weight: bold;
+    margin-left: 80px;
+    margin-top: -120px;
+}
+
+.trans-second-page-text6 {
+    font-family: Constantia;
+    font-weight: bold;
+    margin-left: 80px;
+    margin-top: -120px;
+}
+
+.trans-third-page {
+    width: 100%;
+    height: 100%;
+    background: fixed;
+    background-size: cover;
+    z-index: 100;
+}
+
+.trans-third-page-inner-text {
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.trans-third-page-inner-text h3 {
+    color: white;
+    text-align: center;
+}
+
+.trans-third-page-inner-img {
+    width: 100%;
+    height: 50%;
+
+}
+
+.trans-third-page-inner-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.trans-third-page-text {
+    color: white;
+    font-family: Constantia;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+
+.trans-third-page-text2 {
+    color: lightblue;
+    font-family: Constantia;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.trans-third-page-text3 {
+    color: white;
+    font-family: Courier New;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+
+.trans-third-page2 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.trans-four-page {
+    width: 100%;
+    height: 100%;
+    background: fixed;
+    background-size: cover;
+    z-index: 100;
+}
+
+.trans-four-page-inner {
+    width: 100%;
+    height: 100% !important;
+    background-size: cover;
+}
+
+.trans-four-page-inner-text {
+    width: 100%;
+    height: 50%;
+}
+
+.trans-four-page-inner-img {
+    overflow: hidden;
+    height: 50%;
+    width: 100%;
+}
+
+.trans-four-page-inner-text2 {
+    text-align: center;
+    text-align: center;
+    font-family: Courier New;
+    font-weight: normal;
+}
+
+.trans-four-page-inner-text3 {
+    color: #17A2B8;
+    font-family: Constantia;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+/*index 8 Contact*/
+
+
+.con-first {
+
+    background: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.con-first-inner {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.con-second-inner {
+    width: 100%;
+    height: 400px;
+}
+
+.con-first-inner-map {
+    margin-top: 165px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text-inner-text {
+    color: #17A2B8;
+    font-family: Constantia;
+    margin: 20px;
+    margin-left: -10px;
+}
+
+
+.text-inner-text2 {
+    font-size: 25px;
+    font-family: Constantia;
+    font-weight: bold;
+    margin: 20px;
+    margin-left: -10px;
+
+}
+
+.con-second-inner-text1 {
+    width: 100%;
+    height: 50%;
+}
+
+.con-second-inner-text2 {
+    width: 100%;
+    height: 50%;
+}
+
+
+/*index 9 news*/
+
+.news-header {
+    width: 100%;
+    height: 50%;
+}
+
+.news-header-inner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.news-header-inner-itm {
+    width: 40%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 50px;
+}
+
+.news-header-inner-itm-text {
+    color: white;
+    font-family: Constantia;
+    font-weight: bold;
+}
+
+.news-header-inner-itm2 {
+    width: 40%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom-right-radius: 50px;
+}
+
+.news-header-inner-itm-text2 {
+    color: white;
+    font-family: Constantia;
+    font-weight: bold;
+}
+
+.news-first-itm {
+    width: 100%;
+    height: 40%;
+    box-shadow: 1px 1px 14px -5px rgba(0, 0, 0, 1);
+}
+
+.news-first-itm-text-inner {
+    font-family: Constantia;
+    font-weight: bold;
+}
+
+.news-first-itm-text-inner2 {
+    font-family: Courier;
+    /*font-weight: bold;*/
+}
+
+.news-second-itm {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    box-shadow: 1px 1px 14px -5px rgba(0, 0, 0, 1);
+}
+
+.news-second-itm-text-inner {
+    font-family: Constantia;
+    font-weight: bold;
+}
+
+.news-second-itm-text-inner2 {
+    font-family: Courier;
+    /*font-weight: bold;*/
 }

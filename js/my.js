@@ -967,7 +967,6 @@
     });
 
     window.sr = ScrollReveal();
-
     sr.reveal(".fadeUp-animate", {
         origin: "top",
         distance: "100%",

@@ -204,6 +204,7 @@ figure.effect-zoe:hover .parda img {
     margin-top: -5px;
 }
 
+
 .kres {
     position: absolute;
     left: 0;
@@ -229,6 +230,18 @@ figure.effect-zoe:hover .parda img {
     width: 300px;
     height: 300px;
 
+}
+
+
+.hotel-qanot-box {
+    box-shadow: -6px 4px 20px 1px #4A4A4A;
+}
+
+.text3-inner-text3-palka {
+    /*height: 30px;*/
+    width: 4px;
+    border-radius: 5px;
+    /*display: inline-block;*/
 }
 
 .kres4 {
@@ -267,11 +280,6 @@ figure.effect-zoe:hover .parda img {
     height: 2px;
     transform: rotateZ(135deg);
     display: none;
-}
-
-
-.hotel-text * {
-    text-align: center;
 }
 
 

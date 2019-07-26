@@ -270,6 +270,10 @@ figure.effect-zoe:hover .parda img {
 }
 
 
+.hotel-text * {
+    text-align: center;
+}
+
 
 .own-kres2 {
     position: absolute;
@@ -1127,7 +1131,7 @@ a {
 }
 
 figure.effect-apollo {
-    background: #3498db;
+    background-color: rgba(52, 152, 219, 0.5);
 }
 
 figure.effect-apollo img {

@@ -1588,11 +1588,6 @@ figure.effect-duke:hover p {
 
 /*index 8 Contact*/
 
-#map {
-    height: 100%;
-    width: 100%;
-}
-
 .con-first {
 
     background: fixed;
@@ -1604,55 +1599,9 @@ figure.effect-duke:hover p {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.con-second-inner {
-    width: 100%;
-    height: 400px;
-}
-
-.con-first-inner-map {
-    margin-top: 165px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.text-inner-text {
-    color: #17A2B8;
-    font-family: Constantia;
-    margin: 20px;
-    margin-left: -10px;
-}
 
 
-.text-inner-text2 {
-    font-size: 25px;
-    font-family: Constantia;
-    font-weight: bold;
-    margin: 20px;
-    margin-left: -10px;
 
-}
-
-.text-inner-text3 {
-    font-family: Courier New;
-    margin-left: 0px;
-
-}
-
-.con-second-inner-text1 {
-    width: 100%;
-    height: 50%;
-}
-
-.con-second-inner-text2 {
-    width: 100%;
-    height: 50%;
-}
-
-
-.map-metka {
-    position: absolute !important;
-    margin-top: -300px;
-    margin-left: 45%;
-}
 
 
 /*index 9 news*/

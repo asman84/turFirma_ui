@@ -1018,3 +1018,16 @@
         var map = new google.maps.Map(document.getElementById("map"), mapProp);
         google.maps.event.addDomListener(window, "load", myMap);
     }
+
+    $(".selection-2").select2({
+        minimumResultsForSearch: 20,
+        dropdownParent: $('#dropDownSelect1')
+    });
+
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');

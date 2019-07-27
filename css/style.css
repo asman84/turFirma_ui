@@ -1329,72 +1329,100 @@ figure.effect-duke:hover p {
 
 /*index6 style visa card*/
 
-.visacard-header-img img {
+.contact-carousel {
     width: 100%;
-    height: 400px;
+    height: 50%;
 }
 
-.azimbaraka-visa {
-    position: absolute;
-    right: 0;
-    top: 335px;
-    color: white;
-    text-align: center;
-    width: 40%;
-    height: 16%;
+.carousel-inner {
+    width: 100%;
+    height: 50%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 75vh;
+}
+
+.carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
-    right: 0;
-    bottom: 0;
-    border-top-left-radius: 50px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    bottom: 0px !important;
 }
 
-.azimbaraka-visa-text {
+.carousel-caption h1 {
+    font-family: cursive;
+}
+
+.contact-text {
+    width: 100%;
+    height: 100%;
+    background-color: #080F3F;
+}
+
+.contact-text-inner-texts h2 {
+    color: #C39740;
     font-family: Constantia;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.contact-text-inner-texts ul li {
+    font-family: Constantia;
+    padding: 4px;
+}
+
+.contact-text-inner-texts a {
+    font-family: Constantia;
+    padding: 4px;
+    color: #C39740;
+}
+
+.contact-text-inner-texts p {
+    font-family: Constantia;
+    padding: 8px;
+    color: white;
+}
+
+
+.contact-visa-text {
+    top: 50px;
+    left: 400px
+}
+
+
+.contact-visa-text h1 {
     font-weight: bold;
 }
 
+.contact-text-inner-texts2 h2 {
+    color: #C39740;
+    font-family: Constantia;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.contact-text-inner-texts2 div.mt-5 p {
+    color: #C39740;
+    font-family: Constantia;
+    font-weight: bold;
+    padding: 8px;
+}
+
 .flag-img {
-    width: 40px;
-    height: 20px;
-    margin: 30px;
+    width: 70px;
+    height: 30px;
+}
+
+.flag-img h6 {
+    color: white;
 }
 
 .flag-img img {
     width: 100%;
     height: 100%;
 }
-
-.visacard-itms-text {
-    font-family: Constantia;
-    font-weight: bold;
-    margin-top: 100px !important;
-    margin-left: 100px !important;
-}
-
-.flag-img h6 {
-    font-family: Constantia;
-    font-weight: bold;
-}
-
-.visacard-itms-text2 {
-    font-family: Constantia;
-    font-weight: bold;
-    font-size: 16px;
-    margin-right: 200px;
-    margin-left: 100px !important;
-    margin-top: 80px !important;
-}
-
-.visacard-itms .row div.col-3 {
-    padding-left: 50px !important;
-}
-
-.head-text-new {
-    margin-left: 200px;
-
-}
-
-
 
 /*index7 transports*/
 

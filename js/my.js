@@ -1003,31 +1003,3 @@
         mobile: true,
         reset: false
     });
-
-
-    function myMap() {
-        var latLng = new google.maps.LatLng(41.2984, 69.2731);
-        var mapProp = {
-            zoom: 18,
-            draggable: true,
-            center: latLng,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-
-        // Following Command Will Create the New Map Object
-        var map = new google.maps.Map(document.getElementById("map"), mapProp);
-        google.maps.event.addDomListener(window, "load", myMap);
-    }
-
-    $(".selection-2").select2({
-        minimumResultsForSearch: 20,
-        dropdownParent: $('#dropDownSelect1')
-    });
-
-
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-23581568-13');

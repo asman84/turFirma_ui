@@ -3,15 +3,12 @@ html {
     height: auto;
     width: 100%;
     overflow-x: hidden;
-    /*overflow: hidden;*/
-
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f9eeee !important;
 }
-
 
 *,
 *:after,
@@ -31,14 +28,10 @@ a {
     text-decoration: none;
 }
 
-
-
 .container-body {
     width: 100%;
     height: 100%;
 }
-
-
 
 .sticky-head {
     width: auto;
@@ -48,9 +41,7 @@ a {
 .head-text2 ul li {
     list-style-type: none;
     font-family: arial;
-
 }
-
 
 .head-text3-itm {
     font-family: MS UI Gothic;
@@ -85,15 +76,12 @@ a {
     padding: 10px;
 }
 
-
-
 .content {
     background-image: url(../images/02.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 70%;
 }
-
 
 .horizontal:hover {
     transform: scale(1.005);
@@ -113,8 +101,6 @@ a {
     width: 500px;
 }
 
-
-
 .navbar-brand {
     font-size: 35px !important;
 }
@@ -130,7 +116,6 @@ figure.effect-zoe:hover .parda img {
 .text-img {
     width: 800px;
     height: 200px;
-    /*transform: rotateX(180deg);*/
 }
 
 .slick {
@@ -154,15 +139,13 @@ figure.effect-zoe:hover .parda img {
 .pngg {
     width: 140px;
     height: 80px;
-    margin-bottom: -15px;
-
+    margin-bottom: -15px
 }
 
 .hotel-qanot {
     z-index: -1;
     left: 0;
     top: 0;
-    /*background-color: #8A716A;*/
     background-image: linear-gradient(to top left, blue, pink);
 }
 
@@ -170,11 +153,8 @@ figure.effect-zoe:hover .parda img {
     z-index: -1;
     right: 0;
     bottom: 0;
-    /*background-color: #F4B907;*/
     background-image: linear-gradient(to bottom right, blue, pink);
 }
-
-
 
 .pos-r {
     position: relative;
@@ -204,14 +184,12 @@ figure.effect-zoe:hover .parda img {
     margin-top: -5px;
 }
 
-
 .kres {
     position: absolute;
     left: 0;
     top: 0;
     width: 300px;
     height: 300px;
-
 }
 
 .kres2 {
@@ -220,7 +198,6 @@ figure.effect-zoe:hover .parda img {
     top: 0;
     width: 300px;
     height: 300px;
-
 }
 
 .kres3 {
@@ -229,7 +206,6 @@ figure.effect-zoe:hover .parda img {
     bottom: 0;
     width: 300px;
     height: 300px;
-
 }
 
 
@@ -238,10 +214,8 @@ figure.effect-zoe:hover .parda img {
 }
 
 .text3-inner-text3-palka {
-    /*height: 30px;*/
     width: 4px;
     border-radius: 5px;
-    /*display: inline-block;*/
 }
 
 .kres4 {
@@ -250,7 +224,6 @@ figure.effect-zoe:hover .parda img {
     bottom: 0;
     width: 300px;
     height: 300px;
-
 }
 
 .own-kres {

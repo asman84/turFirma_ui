@@ -1349,7 +1349,6 @@ figure.effect-duke:hover p {
     font-family: Constantia;
     font-weight: bold;
     margin-top: 100px !important;
-    margin-left: 100px !important;
 }
 
 .flag-img h6 {
@@ -1362,7 +1361,6 @@ figure.effect-duke:hover p {
     font-weight: bold;
     font-size: 16px;
     margin-right: 200px;
-    margin-left: 100px !important;
     margin-top: 80px !important;
 }
 
@@ -1619,6 +1617,8 @@ figure.effect-duke:hover p {
     text-align: center;
     font-weight: bolder;
 }
+
+
 
 
 /*index 8 Contact*/

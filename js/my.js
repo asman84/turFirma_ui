@@ -15,17 +15,21 @@
             targets: '.hotel-qanot',
             translateX: -1 * chiqishQanot,
             translateY: -1 * chiqishQanot,
-            easing: 'easeInOutSine'
+            easing: 'easeInOutSine',
+            delay: 1000
         });
         anime({
             targets: '.hotel-qanot2',
             translateX: chiqishQanot,
             translateY: chiqishQanot,
-            easing: 'easeInOutSine'
-
-
+            easing: 'easeInOutSine',
+            delay: 1000
         });
 
+        $(window).load(function() {
+            $(".loader").delay(500).fadeOut("slow");
+            $("#overlayer").delay(500).fadeOut("slow");
+        });
 
 
         $(document).ready(function() {

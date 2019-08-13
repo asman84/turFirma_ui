@@ -1308,6 +1308,28 @@ figure.effect-duke:hover p {
     height: 400px;
 }
 
+.visacard-header-text {
+    width: 40%;
+    height: 66px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    color: white;
+    right: 0;
+    margin-top: -66px;
+    border-top-left-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    z-index: 999;
+}
+
+.visacard-header-text h1 {
+    font-family: Constantia;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
 .flag-img {
     width: 40px;
     height: 20px;
@@ -1319,10 +1341,29 @@ figure.effect-duke:hover p {
     height: 100%;
 }
 
+.visacard-itms {
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    padding: 0px;
+    transition: all 0.4s ease-in-out;
+}
+
+.visacard-itms:hover {
+    box-shadow: 0 0 11px #777;
+    transition: all 0.4s ease-in-out;
+
+}
+
+
 .visacard-itms-text {
     font-family: Constantia;
     font-weight: bold;
-    margin-top: 100px !important;
+    margin-top: 50px !important;
+    background-image: linear-gradient(to top right, lightblue, white);
+    /*padding-top: 10px;*/
+    /*padding-bottom: 10px;*/
+    padding: 12px;
 }
 
 .flag-img h6 {
@@ -1331,15 +1372,25 @@ figure.effect-duke:hover p {
 }
 
 .visacard-itms-text2 {
-    font-family: Constantia;
+    font-family: Courier New;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 12.5px;
     margin-right: 200px;
-    margin-top: 80px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*margin-top: 40px !important;*/
+    background-image: linear-gradient(to top right, lightblue, white);
+
+}
+
+.visacard-itms .row {
+    border: 1px solid #DEF2F2;
+    padding-top: 20px;
+    background-color: #F1F3F4;
 }
 
 .visacard-itms .row div.col-3 {
-    padding-left: 50px !important;
+    padding-left: 20px !important;
 }
 
 .head-text-new {

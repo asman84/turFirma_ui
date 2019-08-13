@@ -1312,7 +1312,7 @@ figure.effect-duke:hover p {
     width: 40%;
     height: 66px;
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
+    position: relative;
     color: white;
     right: 0;
     margin-top: -66px;

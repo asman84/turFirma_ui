@@ -1007,3 +1007,40 @@
         mobile: true,
         reset: false
     });
+
+    window.sr = ScrollReveal();
+    sr.reveal(".fadeDown-animate1", {
+        origin: "bottom",
+        distance: "100%",
+        duration: 1000,
+        easing: "ease",
+        mobile: true,
+        reset: false
+    });
+    window.sr = ScrollReveal();
+    sr.reveal(".fadeDown-animate2", {
+        origin: "bottom",
+        distance: "100%",
+        duration: 1500,
+        easing: "ease",
+        mobile: true,
+        reset: false
+    });
+    window.sr = ScrollReveal();
+    sr.reveal(".fadeDown-animate3", {
+        origin: "bottom",
+        distance: "100%",
+        duration: 2000,
+        easing: "ease",
+        mobile: true,
+        reset: false
+    });
+    window.sr = ScrollReveal();
+    sr.reveal(".fadeDown-animate4", {
+        origin: "bottom",
+        distance: "100%",
+        duration: 2500,
+        easing: "ease",
+        mobile: true,
+        reset: false
+    });
